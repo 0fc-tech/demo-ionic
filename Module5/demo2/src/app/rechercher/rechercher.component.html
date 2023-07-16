@@ -1,0 +1,37 @@
+<ion-list>
+  <ion-list-header>
+    Vos choix
+  </ion-list-header>
+  <ion-item>
+    <ion-alert [isOpen]="isAlertOpen" header="Alert" [message]="error"
+      [buttons]="alertButtons" (didDismiss)="activerAlerte(false)"></ion-alert>
+  </ion-item>
+
+  <ion-item>
+    <ion-input label="Titre" label-placement="floating" type="text" [(ngModel)]="title"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Année" label-placement="floating" type="number" [(ngModel)]="year"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-select label="Type" [(ngModel)]="type">
+      <ion-select-option value="">Tous</ion-select-option>
+      <ion-select-option value="movie">Film</ion-select-option>
+      <ion-select-option value="series">Série</ion-select-option>
+      <ion-select-option value="episode">Episode</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-button expand="full" (click)="rechercher()">Rechercher</ion-button>
+</ion-list>
+<ion-list *ngIf="films && films.length">
+  <ion-card *ngFor="let film of films">
+    <img [src]="film.Poster">
+    <ion-card-header>
+      <ion-title>{{film.Title}}</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{film.Year}}
+    </ion-card-content>
+  </ion-card>
+</ion-list>
+

@@ -1,0 +1,216 @@
+quentin@MacBook-Pro-0fctech Module3 % ionic start
+? Use the app creation wizard? No
+
+Pick a framework! 😁
+
+Please select the JavaScript framework to use for your new app. To bypass this prompt next time, supply a value for the
+--type option.
+
+? Framework: Angular
+
+Every great app needs a name! 😍
+
+Please enter the full name of your app. You can change this at any time. To bypass this prompt next time, supply name,
+the first argument to ionic start.
+
+? Project name: Demo1&2
+
+Let's pick the perfect starter template! 💪
+
+Starter templates are ready-to-go Ionic apps that come packed with everything you need to build your app. To bypass this
+prompt next time, supply template, the second argument to ionic start.
+
+? Starter template: blank
+? Would you like to build your app with NgModules or Standalone Components? 
+ Standalone components are a new way to build with Angular that simplifies the way you build your app. 
+ To learn more, visit the Angular docs:
+ https://angular.io/guide/standalone-components
+
+ Standalone
+✔ Preparing directory ./demo-1-2 in 684.64μs
+✔ Downloading and extracting blank starter in 255.93ms
+> ionic integrations enable capacitor --quiet -- Demo1&2 io.ionic.starter
+> npm i --save -E @capacitor/core@latest
+
+added 1175 packages, and audited 1176 packages in 1m
+
+180 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> npm i -D -E @capacitor/cli@latest
+
+added 43 packages, and audited 1219 packages in 7s
+
+183 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> npm i --save -E @capacitor/haptics @capacitor/app @capacitor/keyboard @capacitor/status-bar
+
+added 4 packages, and audited 1223 packages in 7s
+
+183 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> capacitor init Demo1&2 io.ionic.starter --web-dir www
+✔ Creating capacitor.config.ts in /Users/quentin/Documents/CoursIonic/310-Cross-platform Ionic 2023/Entrainement/Module3/demo-1-2 in 4.88ms
+[success] capacitor.config.ts created!
+
+Next steps: 
+https://capacitorjs.com/docs/getting-started#where-to-go-next
+[OK] Integration capacitor added!
+
+Installing dependencies may take several minutes.
+
+  ──────────────────────────────────────────────────────────────
+
+        Ionic Appflow, the mobile DevOps solution by Ionic
+
+           Continuously build, deploy, and ship apps 🚀
+        Focus on building apps while we automate the rest 🎁
+
+                 👉  https://ion.link/appflow  👈
+
+  ──────────────────────────────────────────────────────────────
+
+
+> npm i
+
+up to date, audited 1223 packages in 3s
+
+183 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+> git init
+Initialized empty Git repository in /Users/quentin/Documents/CoursIonic/310-Cross-platform Ionic 2023/Entrainement/Module3/demo-1-2/.git/
+> git add -A
+> git commit -m "Initial commit" --no-gpg-sign
+[main (root-commit) e33a9d5] Initial commit
+ 34 files changed, 16795 insertions(+)
+ create mode 100644 .browserslistrc
+ create mode 100644 .editorconfig
+ create mode 100644 .eslintrc.json
+ create mode 100644 .gitignore
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 angular.json
+ create mode 100644 capacitor.config.ts
+ create mode 100644 ionic.config.json
+ create mode 100644 karma.conf.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/app/app.component.html
+ create mode 100644 src/app/app.component.scss
+ create mode 100644 src/app/app.component.spec.ts
+ create mode 100644 src/app/app.component.ts
+ create mode 100644 src/app/app.routes.ts
+ create mode 100644 src/app/home/home.page.html
+ create mode 100644 src/app/home/home.page.scss
+ create mode 100644 src/app/home/home.page.spec.ts
+ create mode 100644 src/app/home/home.page.ts
+ create mode 100644 src/assets/icon/favicon.png
+ create mode 100644 src/assets/shapes.svg
+ create mode 100644 src/environments/environment.prod.ts
+ create mode 100644 src/environments/environment.ts
+ create mode 100644 src/global.scss
+ create mode 100644 src/index.html
+ create mode 100644 src/main.ts
+ create mode 100644 src/polyfills.ts
+ create mode 100644 src/test.ts
+ create mode 100644 src/theme/variables.scss
+ create mode 100644 src/zone-flags.ts
+ create mode 100644 tsconfig.app.json
+ create mode 100644 tsconfig.json
+ create mode 100644 tsconfig.spec.json
+
+Your Ionic app is ready! Follow these next steps:
+
+- Go to your new project: cd ./demo-1-2
+- Run ionic serve within the app directory to see your app in the browser
+- Run ionic capacitor add to add a native iOS or Android project using Capacitor
+- Generate your app icon and splash screens using cordova-res --skip-config --copy
+- Explore the Ionic docs for components, tutorials, and more: https://ion.link/docs
+- Building an enterprise app? Ionic has Enterprise Support and Features: https://ion.link/enterprise-edition
+quentin@MacBook-Pro-0fctech Module3 % cd demo-1-2 
+quentin@MacBook-Pro-0fctech demo-1-2 % ionic serve
+> ng run app:serve --host=localhost --port=8100
+[ng] - Generating browser application bundles (phase: setup)...
+[ng] ✔ Browser application bundle generation complete.
+[ng] Initial Chunk Files                                                                                     | Names                   |  Raw Size
+[ng] vendor.js                                                                                               | vendor                  |   3.21 MB | 
+[ng] polyfills.js                                                                                            | polyfills               | 336.74 kB | 
+[ng] styles.css, styles.js                                                                                   | styles                  | 276.28 kB | 
+[ng] runtime.js                                                                                              | runtime                 |  14.10 kB | 
+[ng] main.js                                                                                                 | main                    |  12.09 kB | 
+[ng] 
+[ng]                                                                                                         | Initial Total           |   3.84 MB
+[ng] 
+[ng] Lazy Chunk Files                                                                                        | Names                   |  Raw Size
+[ng] polyfills-core-js.js                                                                                    | polyfills-core-js       | 152.18 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-datetime_3_entry_js.js                                             | -                       | 138.34 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-item_8_entry_js.js                                                 | -                       |  90.53 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-modal_entry_js.js                                                  | -                       |  80.10 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-app_8_entry_js.js                                                  | -                       |  78.99 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-select_3_entry_js.js                                               | -                       |  76.70 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-textarea_entry_js.js                                               | -                       |  63.72 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-popover_entry_js.js                                                | -                       |  61.55 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-input_entry_js.js                                                  | -                       |  61.44 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-alert_entry_js.js                                                  | -                       |  54.61 kB | 
+[ng] default-node_modules_ionic_core_dist_esm_data-1af84f31_js-node_modules_ionic_core_dist_esm_th-b55f4c.js | -                       |  54.34 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-refresher_2_entry_js.js                                            | -                       |  53.21 kB | 
+[ng] common.js                                                                                               | common                  |  49.85 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-range_entry_js.js                                                  | -                       |  49.38 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-menu_3_entry_js.js                                                 | -                       |  44.12 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-segment_2_entry_js.js                                              | -                       |  41.22 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-searchbar_entry_js.js                                              | -                       |  38.28 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-button_2_entry_js.js                                               | -                       |  37.53 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-nav_2_entry_js.js                                                  | -                       |  36.98 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-item-option_3_entry_js.js                                          | -                       |  36.47 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-route_4_entry_js.js                                                | -                       |  35.23 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-action-sheet_entry_js.js                                           | -                       |  34.07 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-toggle_entry_js.js                                                 | -                       |  34.05 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-radio_2_entry_js.js                                                | -                       |  32.64 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-toast_entry_js.js                                                  | -                       |  31.09 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-tab-bar_2_entry_js.js                                              | -                       |  29.75 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-fab_3_entry_js.js                                                  | -                       |  28.63 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-accordion_2_entry_js.js                                            | -                       |  28.33 kB | 
+[ng] polyfills-dom.js                                                                                        | polyfills-dom           |  26.61 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-checkbox_entry_js.js                                               | -                       |  25.61 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-picker-internal_entry_js.js                                        | -                       |  24.76 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-progress-bar_entry_js.js                                           | -                       |  24.09 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-breadcrumb_2_entry_js.js                                           | -                       |  23.10 kB | 
+[ng] node_modules_ionic_core_dist_esm_input-shims-6f71b552_js.js                                             | input-shims-6f71b552-js |  22.65 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-picker-column-internal_entry_js.js                                 | -                       |  20.93 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-loading_entry_js.js                                                | -                       |  20.45 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-datetime-button_entry_js.js                                        | -                       |  18.72 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-back-button_entry_js.js                                            | -                       |  17.94 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-card_5_entry_js.js                                                 | -                       |  17.35 kB | 
+[ng] default-node_modules_ionic_core_dist_esm_form-controller-6cd7ebd1_js-node_modules_ionic_core_-6eb319.js | -                       |  17.12 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-reorder_2_entry_js.js                                              | -                       |  13.57 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-infinite-scroll_2_entry_js.js                                      | -                       |  13.55 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-col_3_entry_js.js                                                  | -                       |  13.25 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-spinner_entry_js.js                                                | -                       |  11.01 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-tab_2_entry_js.js                                                  | -                       |  10.68 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-split-pane_entry_js.js                                             | -                       |   9.15 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-avatar_3_entry_js.js                                               | -                       |   7.94 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-chip_entry_js.js                                                   | -                       |   7.34 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-ripple-effect_entry_js.js                                          | -                       |   6.34 kB | 
+[ng] node_modules_ionic_core_dist_esm_index-1204fe95_js.js                                                   | index-1204fe95-js       |   6.34 kB | 
+[ng] src_app_home_home_page_ts.js                                                                            | home-home-page          |   5.26 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-img_entry_js.js                                                    | -                       |   4.63 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-text_entry_js.js                                                   | -                       |   4.28 kB | 
+[ng] node_modules_ionic_core_dist_esm_ion-backdrop_entry_js.js                                               | -                       |   3.24 kB | 
+[ng] node_modules_ionic_core_dist_esm_status-tap-211f1ad8_js.js                                              | status-tap-211f1ad8-js  |   3.00 kB | 
+[ng] 
+[ng] Build at: 2023-07-14T16:26:40.726Z - Hash: 26390e87acfe5b21 - Time: 14816ms
+[ng] ✔ Compiled successfully.
+
+[INFO] Development server running!
+       
+       Local: http://localhost:8100
+       
+       Use Ctrl+C to quit this process
+
+[INFO] Browser window opened to http://localhost:8100!
